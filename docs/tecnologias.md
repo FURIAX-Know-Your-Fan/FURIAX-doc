@@ -52,14 +52,52 @@ O **MongoDB** é um banco de dados NoSQL baseado em documentos, que se adapta be
 
 ---
 
-### **Flowise** 🔄
+### **FastAPI (Python)** ⚡🐍
 
 **Por que será usada:**
 
-O **Flowise** é uma ferramenta poderosa para criar fluxos de automação de forma visual, sem a necessidade de codificação extensiva. Será utilizada para integrar e orquestrar fluxos de trabalho que dependem de APIs externas e manipulação de dados, como integração com o Twitter ou outros sistemas.
+O FastAPI é um framework moderno e de alto desempenho para a construção de APIs com Python. Ele é ideal para aplicações web e microsserviços por sua velocidade, facilidade de uso e suporte nativo a validações e documentação automática.
 
-- **Automação sem código** 🤖: Flowise permite criar fluxos automatizados sem a necessidade de codificar cada passo manualmente, acelerando o processo de desenvolvimento.
-- **Integração com APIs** 🔗: Facilita a integração com diversas APIs externas, como redes sociais (Twitter, Instagram, etc.), para obter e processar dados de maneira eficiente.
-- **Orquestração de fluxos complexos** 🔄: Ideal para orquestrar processos mais complexos, como a vinculação de contas externas (Twitter) aos perfis dos usuários, ou a análise de interações entre usuários.
+- **Alto desempenho** 🚀: Construído sobre o Starlette e o Pydantic, o FastAPI é um dos frameworks mais rápidos para APIs em Python, ficando próximo de frameworks escritos em Node.js e Go.
+
+- **Desenvolvimento rápido e intuitivo** 🧠: Utiliza tipagem estática para gerar automaticamente documentação interativa (Swagger e Redoc) e validação de dados, o que acelera o desenvolvimento e reduz erros.
+
+- **Integração com padrões modernos** 🔌: Suporte nativo a OAuth2, JWT, CORS, e integração fácil com bancos de dados, background tasks, WebSockets, e mais.
+
+- **Escalável e pronto para produção** 🏭: Projetado para ser usado em ambientes de produção, com suporte a async/await, tornando-o ideal para aplicações assíncronas e de alta carga.
+
 
 ---
+
+### **Ollama** 🤖🧠
+
+**Por que será usado:**
+
+O Ollama é uma plataforma de Inteligência Artificial especializada em integração com modelos de linguagem (LLMs) de alta performance, ideal para realizar tarefas de NLP (Processamento de Linguagem Natural) e automação com modelos pré-treinados.
+
+- **Integração simplificada** 🔗: O Ollama oferece APIs simples de integrar com outras ferramentas, permitindo a criação rápida de chatbots, assistentes virtuais e soluções baseadas em IA.
+
+- **Modelos poderosos** 💪: Oferece acesso a modelos de linguagem avançados, como GPT e outras variantes, permitindo realizar tarefas complexas como análise de sentimentos, tradução, resumo de textos e geração de conteúdo.
+
+- **Desempenho otimizado** 🚀: Focado em performance, o Ollama é eficiente em lidar com grandes volumes de dados e solicitações simultâneas, garantindo respostas rápidas em tempo real.
+
+- **Facilidade de uso** 🛠️: A interface e as ferramentas do Ollama são projetadas para facilitar o uso por desenvolvedores e pesquisadores, com documentação clara e exemplos prontos para uso.
+
+### **DeepFace (Python)** 🧠👤
+
+**Por que será usado:**
+
+O DeepFace é uma biblioteca de Python que facilita a implementação de reconhecimento facial e análise de características faciais em imagens. Baseada em modelos de aprendizado profundo de última geração, o DeepFace oferece uma solução simples e eficiente para tarefas de reconhecimento e verificação de identidade em tempo real.
+
+- **Tecnologia avançada de reconhecimento facial** 👀: Utiliza modelos de deep learning de alta performance, como VGG-Face, Google FaceNet, OpenFace, DeepID, e Dlib, para realizar tarefas de análise facial com precisão.
+
+- **Facilidade de uso e integração** 🔧: A API do DeepFace é simples e intuitiva, permitindo que os desenvolvedores integrem funcionalidades de reconhecimento facial em seus aplicativos com poucas linhas de código.
+
+- **Versatilidade** 🔄: Além de reconhecimento facial, o DeepFace também oferece análise de atributos faciais, como idade, gênero, e emoções, proporcionando um nível de detalhamento nas análises.
+
+- **Suporte a múltiplos backends** ⚙️: Permite utilizar diferentes backends de modelos, oferecendo flexibilidade para escolher o que melhor se adapta à aplicação, seja para reconhecimento, verificação ou agrupamento facial.
+
+- **Desempenho otimizado** 🚀: Projetado para ser eficiente em termos de recursos, garantindo um bom desempenho mesmo em grandes volumes de dados ou em tempo real.
+
+
+
