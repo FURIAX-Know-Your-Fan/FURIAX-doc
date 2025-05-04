@@ -1,27 +1,29 @@
-# **Setup da Aplicação**
+# **Setup da Aplicação** ⚙️
 
-## **Pré-Requisitos**
+## **Pré-Requisitos** 🛠️
 
 Antes de iniciar a aplicação, verifique se os seguintes componentes estão instalados em seu ambiente:
 
-- **Docker** (v28.1.1, build 4eba377)
-- **Python**
-- **Node.js** (v22.14.0)
-- **npm** (v10.9.2)
+- **Docker** (v28.1.1, build 4eba377) 🐳
+- **Python** 🐍
+- **Node.js** (v22.14.0) 🌐
+- **npm** (v10.9.2) 📦
 
-### **Sistema Operacional Recomendado**
+### **Sistema Operacional Recomendado** 🖥️
 
 Embora a aplicação seja **dockerizada**, é altamente recomendada a execução em um sistema operacional **Linux**. Isso ocorre porque alguns módulos específicos, que requerem o uso de GPU (para tarefas de IA), são executados localmente, a fim de evitar a complexidade de configurar o acesso à GPU dentro do Docker.
 
-## **Para subir os containers Docker**
+---
 
-### **API**
+## **Para subir os containers Docker** 🚢
 
-#### **Configuração do Ambiente**
+### **API** 🔌
+
+#### **Configuração do Ambiente** ⚙️
 
 Crie um arquivo chamado `.env` na raiz do projeto com as seguintes variáveis de ambiente:
 
-```
+```env
 API_PORT=3001
 ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000,http://localhost:3001
 
@@ -53,7 +55,7 @@ PASSWORD=<senha_do_twitter>
 
 ---
 
-#### **Execução dos Módulos de Validação de Documentos**
+#### **Execução dos Módulos de Validação de Documentos** 📜
 
 1. Acesse o diretório de validação de documentos:
 
@@ -85,11 +87,13 @@ pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8002
 ```
 
-## **Frontend**
+---
 
-#### **Instalação das Dependências**
+## **Frontend** 🌍
 
-Crie um arquivo .env com as variáveis de ambiente.
+#### **Instalação das Dependências** 📥
+
+Crie um arquivo `.env` com as variáveis de ambiente:
 
 ```env
 VITE_API_URL="http://localhost:3001/api"
@@ -102,7 +106,7 @@ Execute o seguinte comando na raiz do projeto frontend para instalar todas as de
 npm install
 ```
 
-#### **Inicialização da Aplicação**
+#### **Inicialização da Aplicação** 🚀
 
 Após a instalação, inicie o ambiente de desenvolvimento com o comando:
 
@@ -112,10 +116,11 @@ npm run dev
 
 > 💡 Certifique-se de que as variáveis de ambiente estejam corretamente configuradas e que a API esteja em execução antes de iniciar o frontend.
 
+---
 
-## **Ollama**
+## **Ollama** 🧠
 
-#### **Instalação**
+#### **Instalação** 🖥️
 
 Para instalar o Ollama em seu sistema, execute o seguinte comando no terminal:
 
@@ -123,7 +128,7 @@ Para instalar o Ollama em seu sistema, execute o seguinte comando no terminal:
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-#### **Download do Modelo**
+#### **Download do Modelo** 📥
 
 Após a instalação, faça o download do modelo necessário para análise executando:
 
@@ -131,7 +136,7 @@ Após a instalação, faça o download do modelo necessário para análise execu
 ollama run gemma3:4b
 ```
 
-#### **Expondo a Porta com Ngrok**
+#### **Expondo a Porta com Ngrok** 🌐
 
 Para permitir acesso externo ao serviço, exponha a porta utilizada pelo Ollama com o **Ngrok**:
 
